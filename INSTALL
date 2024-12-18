@@ -1,8 +1,11 @@
 GstPEAQ - Installation Instructions
 -----------------------------------
+Extra dependency of git version:
+If you clone from git, you need to install the following packages (in debian/ubuntu):
+sudo apt-get install -y git2cl gtk-doc-tools w3-dtd-mathml libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good
 
-GstPEAQ uses the autotools infrastructure for building, so ideally
-
+GstPEAQ uses the autotools infrastructure for building, so ideally:
+./autogen.sh
 ./configure
 make
 make install
