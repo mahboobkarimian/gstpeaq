@@ -1,9 +1,27 @@
 GstPEAQ - Installation Instructions
 -----------------------------------
-Prerequisites (not exhaustive):
-You need to install the following packages (in debian/ubuntu):
-sudo apt-get install -y git2cl gtk-doc-tools w3-dtd-mathml libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+Prerequisites:
+* To build from releases tarball
+libgstreamer-plugins-base1.0-dev
+make
+clang or gcc
 
+* To build from git (additional to those mentioned earlier):
+automake 
+git
+git2cl
+libtool
+
+* For running (all) tests, one additionally needs:
+gstreamer1.0-plugins-base
+gstreamer1.0-plugins-good
+gstreamer1.0-tools
+
+* For building the documentation, one needs:
+gtk-doc-tools
+w3c-sgml-lib (formerly w3-dtd-mathml)
+
+Build:
 GstPEAQ uses the autotools infrastructure for building, so ideally:
 ./autogen.sh # when building from git only, not required for release tarball
 ./configure
